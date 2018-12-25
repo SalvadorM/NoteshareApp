@@ -1,0 +1,298 @@
+body {
+	background-color: #90A4AE;
+}
+/*
+-------------------------------
+*/
+
+.moveright{
+	color: red;
+	float: right;
+}
+
+/*
+-------------------------------
+*/
+/*Nav bar css*/
+.logo, .links {
+    display: inline-block;
+}
+
+.links {
+    float:right;
+}
+
+a:hover {
+	color: white;
+}
+
+.nav-item {
+	margin: 0px 5px;
+}
+ 
+
+/*Nav bar css*/
+
+.branding{
+	font-size: 1rem;
+}
+
+.showcase{
+	background:url('./showcase.jpg') no-repeat;
+	background-position: center;
+	height: 100vh;
+	color:#fff;
+}
+.showcase1{
+	background:url('./study4.jpg');
+	background-size: cover;
+	color:#fff;
+	height: 45vh;
+}
+.size{
+	width: 400px;
+    height: atuo;
+    padding: 13px;  
+
+    /* position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -200px;
+    margin-top: -200px;
+     */
+
+    /* background-color: rgba(240, 255, 255, 0.8); */
+
+    opacity: 1;
+
+    /* border-radius: 10px; */
+    text-align: center;  
+	
+}
+.size1{
+	width: 400px;
+    height: atuo;
+    padding: 13px;  
+	
+    /* position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -200px;
+    margin-top: -200px;
+	 */
+	 
+
+    /* background-color: rgba(240, 255, 255, 0.8); */
+
+    opacity: 1;
+
+    border-radius: 20px;
+    text-align: center;  
+	
+}
+.showcase2{
+	background:url('./study6.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 30px 0 200px;
+	background-size: cover;
+	color:#fff;
+}
+.showcase h1{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.showcase hr{
+	width: 100px;
+	margin:auto;
+	border-width: 3px;
+	border-color: teal;
+}
+
+.showcase p{
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.section {
+	padding: 40px 0;
+}
+
+.section h2{
+	padding: 0;
+	margin: 0;
+}
+
+.section .fa {
+	font-size: 50px;
+}
+
+.section img {
+	width: 100%;
+}
+/*
+user 
+*/
+
+#user-panel2{
+	width: 65%;
+}
+
+/*
+note 
+*/
+#title {
+	width: 50%;
+	margin: auto ;
+	background-color: #ECEFF1;
+}
+.fontwords{
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+#body, #text {
+	width: 80%;
+	margin: auto ;
+	background-color: #ECEFF1;
+}
+
+
+.words {
+	padding-top: 50px;
+	font-size: 2rem;
+	font-weight: bold;
+	text-shadow: 2px 2px black;
+}
+.text-muted {
+	font-size: 0.5rem;
+}
+.w-75,.w-50 {
+	margin: auto;
+}
+/* IMAGES */
+.images {
+	width: 80%;
+	margin: auto;
+}
+
+
+/* HOME PAGE */
+.middle {
+	width: 50%;
+	margin: auto;
+}
+
+/* LOGIN */
+
+#login {
+	margin-top: 2em;
+}
+.log {
+	width: 50%;
+	margin: auto;
+}
+
+/*  */
+
+.test1{
+	box-shadow: 0 0 0 1px #fff;
+	border: 1px dashed #ccc;
+	
+}
+
+#dark {
+	color: #666;
+}
+
+/*
+-_________________________
+*/
+/* tutorial */  
+  
+	input, textarea {    
+	padding: 9px;   
+	border: solid 1px #E5E5E5;   
+	outline: 0; 
+	border-radius: 10px;  
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;   
+	width: 200px;   
+	background: #FFFFFF url('bg_form.png') left top repeat-x;   
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));   
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);   
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
+	}   
+	 
+   textarea {    
+	width: 400px;   
+	max-width: 400px;   
+	height: 150px;   
+	line-height: 150%;   
+	}   
+	 
+   input:hover, textarea:hover,   
+   input:focus, textarea:focus {    
+	border-color: #C9C9C9;    
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;   
+	}   
+	 
+   .form label {    
+	margin-left: 10px;    
+	color: #999999;    
+	}   
+	 
+   .submit input {   
+	width: auto;   
+	padding: 9px 15px;   
+	background: #617798;   
+	border: 0;   
+	font-size: 14px;   
+	color: #FFFFFF;   
+	-moz-border-radius: 5px;   
+	-webkit-border-radius: 5px;   
+	}   
+
+	.postion1{
+		padding-top: 20px;
+	}
+	.postion3{
+		padding-bottom: 20px;
+	}
+
+
+	.comment-style {
+		width: 80%;
+		margin: auto;
+		border-bottom: 1px solid black;
+		border-radius: 5px;
+	}
+
+/* Footer */
+
+.wrap {
+
+}
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+
+}
+
+
+/*
+small screen
+-------------------------------
+*/
+@media only screen and (max-width: 600px){
+	body{
+		margin-top: 190px;
+	}
+
+	.showcase{
+		height: 400px;
+		padding: 60px 0;
+	}
+}
