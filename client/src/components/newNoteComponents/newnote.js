@@ -100,54 +100,54 @@ class NewNote extends Component {
                 if(this.state.upload.imageURL.length !== 0){
                     imagesInfo = <div>
                     <p>Images uploaded {this.state.upload.imageURL.length}</p>
-                    <button className="w3-btn" onClick={(e) => this.clear(e)} >clear</button>
+                    <button className="btn btn-danger " onClick={(e) => this.clear(e)} >clear</button>
                 </div>
                 } else {
                     imagesInfo = <div></div>
                 }
             }
             return(
-                <div id="user-panel2" className="w3-container w3-padding-64 w3-display-topmiddle">
-                <div   className="w3-container">
-                <div className="w3-card-4">
-                <form  id ="login "className="w3-container w3-center test1" name="login" onSubmit={ (e) => this.onSubmit(e)}>
-                <div className="postion1">
+                <div className="container text-center">
+                <div className="">
+                <div className="">
+                <form className="form-group" name="login" onSubmit={ (e) => this.onSubmit(e)}>
+                <div className="">
+
                     <h1>New Note</h1>
-                    <label className="fontwords">Name your title</label>
+                    <label className="">Name your title</label>
                     <input name="title" 
-                           className="w3-input"
-                           id="title" 
+                           className="form-control w-50"
                            type="text"
                            onChange = { (e) => this.onChange(e) }
                            required
                            ></input>
 
-                    <label className="fontwords">Body</label>
+                    <label className="">Body</label>
                     <textarea name="body" 
-                           className="w3-input"
-                           id="body" 
+                           className="form-control form-control-lg w-75"
                            type="text"
+                           rows="3"
                            onChange = { (e) => this.onChange(e)}
                            required
                            ></textarea>
                     <br></br>
-                    <label className="fontwords">keywords</label>
+                    <label className="">keywords</label>
                     <textarea name="text" 
-                           className="w3-input"
-                           id="text" 
-                           type="txt"
+                           className="form-control w-75"
+                           type="text"
+                           rows="3"
                            onChange = { (e) => this.onChange(e)}
                            required
                           ></textarea>
                     <br></br>
 
                     <div >
-                    <Images callbackFromParent={this.imageCallback}/>
+                    <Images className="my-3" callbackFromParent={this.imageCallback}/>
                     </div>
                     {imagesInfo}
                 </div >
-                    <div className="postion3">
-                    <button type="submit" className="fontwords">Create Note</button>
+                    <div className="">
+                    <button type="submit" className="btn btn-primary mt-3">Create Note</button>
                     </div>
                 </form>
                 </div>

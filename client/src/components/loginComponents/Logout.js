@@ -1,28 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 const Auth = require('../../utilities/auth')
 
-const LogOut = () => {
+class LogOut extends Component {
 
-    function clearLocalStorage(e) {
+    constructor(){
+        super()
+        this.state = {
+            logOutCb: false,
+        };
+    }
+
+    componentWillMount(){
+       if(Auth.getlocal('isAuthenticated') === 'false') {
+        this.setState({ logOutCb: false })
+       }
+    }
+
+    clearLocalStorage(e) {
         e.preventDefault();
-        Auth.signout()
-
+         Auth.signout(()=> {
+            this.setState({ logOutCb: true })
+         })
+        
     }
 
-    if (Auth.getlocal('id')){
-        return (
-            <button type="button" 
-                    className="btn btn-sm btn-outline-danger ml-2" 
-                    onClick={clearLocalStorage}>
-                    Sign Out
-                    </button>
-          
-        )
-    }else {
-        return (<div></div>)
-    }
-  
+    render() {
+        const { logOutCb } = this.state;
+        if(logOutCb) {
+            return  <Redirect to="/login" />
+        }else {
+            if (Auth.getlocal('id')){
+                return (
+                    <button type="button" 
+                            className="btn btn-sm btn-outline-danger ml-2" 
+                            onClick={this.clearLocalStorage.bind(this)}>
+                            Sign Out
+                            </button>
+                )
+            }
+            return(<div></div>)
+        }
 
+    }
 }
 
 export default LogOut;

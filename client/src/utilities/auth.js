@@ -42,8 +42,10 @@ module.exports = {
     /*
         sign out and clear the localStorage
     */
-    signout() {
-        localStorage.clear();
+    signout(cb) {
+        localStorage.clear()
         console.log(localStorage)
+        cb()
+       
     }
 }

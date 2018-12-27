@@ -21,9 +21,10 @@ class App extends Component {
   render() {
     return (
         <div className=""> 
-          <NavBar/> 
+          
 
           <div className="wrap"> 
+          <NavBar/> 
           <Switch >
             <Route exact path="/" component={Home} />
             <Route exact path="/notes" component={Notes}/>

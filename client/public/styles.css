@@ -131,13 +131,7 @@ a:hover {
 .section img {
 	width: 100%;
 }
-/*
-user 
-*/
 
-#user-panel2{
-	width: 65%;
-}
 
 /*
 note 
@@ -147,15 +141,7 @@ note
 	margin: auto ;
 	background-color: #ECEFF1;
 }
-.fontwords{
-	font-family: Georgia, serif;
-	font-size: 20px;
-}
-#body, #text {
-	width: 80%;
-	margin: auto ;
-	background-color: #ECEFF1;
-}
+
 
 
 .words {
@@ -185,9 +171,6 @@ note
 
 /* LOGIN */
 
-#login {
-	margin-top: 2em;
-}
 .log {
 	width: 50%;
 	margin: auto;
@@ -210,7 +193,7 @@ note
 */
 /* tutorial */  
   
-	input, textarea {    
+	input {    
 	padding: 9px;   
 	border: solid 1px #E5E5E5;   
 	outline: 0; 
@@ -223,19 +206,6 @@ note
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;   
-	}   
-	 
-   textarea {    
-	width: 400px;   
-	max-width: 400px;   
-	height: 150px;   
-	line-height: 150%;   
-	}   
-	 
-   input:hover, textarea:hover,   
-   input:focus, textarea:focus {    
-	border-color: #C9C9C9;    
-	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;   
 	}   
 	 
    .form label {    
@@ -253,10 +223,6 @@ note
 	-moz-border-radius: 5px;   
 	-webkit-border-radius: 5px;   
 	}   
-
-	.postion1{
-		padding-top: 20px;
-	}
 	.postion3{
 		padding-bottom: 20px;
 	}

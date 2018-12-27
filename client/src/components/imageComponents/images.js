@@ -61,7 +61,7 @@ class Images extends Component{
     render(){
         return(<div>
             <Dropzone 
-                className="images w3-outline"
+                className="border border-primary rounded w-50 py-3"
                 onDrop={this.handleDrop} 
                 multiple 
                 accept="image/*" 
