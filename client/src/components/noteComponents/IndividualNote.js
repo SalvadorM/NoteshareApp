@@ -84,7 +84,7 @@ class ViewUserNotes extends Component {
 
             return (
                 <div className="container">
-                    <div className=""> 
+                    <div className="text-center"> 
                         {notelist}
                         {pictures}
                      </div>

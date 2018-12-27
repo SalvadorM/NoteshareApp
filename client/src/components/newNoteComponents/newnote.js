@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import { createnewnote } from '../userFunctions';
 
+
 //image component 
 import Images from '../imageComponents/images';
 
@@ -25,7 +26,8 @@ class NewNote extends Component {
                title:'',
                body:'',
                text:''
-            }
+            },
+            cancel: false,
          };
     }
 
@@ -77,16 +79,15 @@ class NewNote extends Component {
      
     }
 
-    clear(e){
-        e.preventDefault()
-        this.setState({upload: {
-            imageCB: false,
-            imageURL: [],
-        }})
+    cancel(e){
+       this.setState({cancel: true})
     }
     render () {
        
-        const { callBackResponce } = this.state;
+        const { callBackResponce, cancel } = this.state;
+        if(cancel) {
+            return  <Redirect to="/user" />
+        }
 
         //if the new note was created with success
         //redirect to a new path to view the note
@@ -100,7 +101,8 @@ class NewNote extends Component {
                 if(this.state.upload.imageURL.length !== 0){
                     imagesInfo = <div>
                     <p>Images uploaded {this.state.upload.imageURL.length}</p>
-                    <button className="btn btn-danger " onClick={(e) => this.clear(e)} >clear</button>
+                    <button className="btn btn-danger " onClick={(e) => this.cancel(e)} >clear</button>
+                    <p className="text-muted">Clear goes back to user page</p>
                 </div>
                 } else {
                     imagesInfo = <div></div>
@@ -146,9 +148,13 @@ class NewNote extends Component {
                     </div>
                     {imagesInfo}
                 </div >
-                    <div className="">
-                    <button type="submit" className="btn btn-primary mt-3">Create Note</button>
-                    </div>
+
+                <button type="submit" className="btn btn-primary mt-3">Create Note</button>
+                <button type="button" 
+                            className="btn btn-outline-danger mt-3 ml-2" 
+                            onClick={(e) => this.cancel(e)}>
+                            cancel
+                            </button>
                 </form>
                 </div>
                 </div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-
+//import log out button
+import LogOut from '../loginComponents/Logout'
 import { getUserByID } from '../userFunctions'
 import  ViewUserNote  from '../noteComponents/reviewusernote'
 
@@ -49,22 +50,23 @@ class User extends Component {
 
             return(
 
-                <div>
+                <div className="text-center" >
                     <div className="showcase1 align-middle">
                     <div className="text-center words">
                         {name}'s profile 
-                        <br></br>
-                        Notes created by {this.state.name}
                     </div>    
                     </div>
 
                     <div className="container text-center my-4">
+
                         <h2><Link className="badge badge-info" to="/newpost">Create a new note</Link></h2>
-                          
+                        <h2>Notes created by {this.state.name}</h2>
+                        
                         <div className="mt-4">
-                            <ViewUserNote findAllByID={this.state.id} />           
+                            <ViewUserNote findAllByID={this.state.id} />          
                         </div>
                     </div>
+                    <LogOut />
                 </div>
             )
         }

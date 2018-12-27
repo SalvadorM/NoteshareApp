@@ -52,11 +52,7 @@ class ViewUserNotes extends Component {
     render(){
         if(this.state.callbackResponce){
             const notes = this.state.notes.map( note => {
-                return(       
-               
-                        <Display key={note.id} note={note} />    
-                
-                );
+                return(<Display key={note.id} note={note} />);
             })
      
             return (

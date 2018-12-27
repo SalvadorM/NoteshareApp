@@ -20,9 +20,6 @@ import {PrivateRoute} from './utilities/privateRoute'
 class App extends Component {
   render() {
     return (
-        <div className=""> 
-          
-
           <div className="wrap"> 
           <NavBar/> 
           <Switch >
@@ -37,8 +34,6 @@ class App extends Component {
             <PrivateRoute exact path="/viewnote/:id" component={RenderNote} />
           </Switch>
           </div>
-        </div>
-
     );
   }
 }

@@ -7,7 +7,6 @@ class RenderNote extends Component {
     
     render(){
 
-         let _username=Auth.getlocal('username')
          let userid = Auth.getlocal('id')
        
         //  console.log("hello");
