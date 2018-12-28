@@ -37,6 +37,9 @@ npm run dev
 ## Author
 
 * **Salvador Munoz** 
+* **Weibin**
+* **Kevon**
+
 
 
 ## License
